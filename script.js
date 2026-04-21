@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (header) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 20) {
-                header.classList.add('bg-ink/95', 'shadow-2xl', 'h-20');
-                header.classList.remove('bg-ink/80', 'h-24');
+                header.classList.add('bg-ink-darkest/95', 'shadow-2xl', 'h-20');
+                header.classList.remove('bg-ink-darkest/80', 'h-24');
             } else {
-                header.classList.remove('bg-ink/95', 'shadow-2xl', 'h-20');
-                header.classList.add('bg-ink/80', 'h-24');
+                header.classList.remove('bg-ink-darkest/95', 'shadow-2xl', 'h-20');
+                header.classList.add('bg-ink-darkest/80', 'h-24');
             }
         });
     }
