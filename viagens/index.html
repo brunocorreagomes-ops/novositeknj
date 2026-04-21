@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Agência Completa de Viagens em Indaiatuba e Campinas | KNJ TUR</title>
+    <meta name="description" content="Agência de viagens personalizada em Indaiatuba e Campinas. Passagens aéreas, hotéis, cruzeiros e roteiros exclusivos. Atendimento local especializado.">
+    
+    <!-- Base Styles -->
+    <link rel="stylesheet" href="../styles.css">
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF8C00',
+                        'primary-light': '#E5D5C0',
+                        ink: '#0A0A0A',
+                        surface: '#F8F6F4',
+                        'surface-alt': '#F2F0ED',
+                        whatsapp: '#25D366',
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        serif: ['Montserrat', 'serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Schema Markup JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "KNJ TUR",
+      "image": "https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png",
+      "description": "Sua agência completa de viagens especializada em roteiros personalizados, cruzeiros e passagens aéreas.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Indaiatuba",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "telephone": "+5511994085822"
+    }
+    </script>
+</head>
+<body class="bg-ink text-primary-light antialiased selection:bg-primary/30">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-ink/80 backdrop-blur-xl border-b border-white/5 h-20 md:h-24 flex items-center transition-all duration-300">
+        <div class="container mx-auto px-6 md:px-12 flex justify-between items-center">
+            <a href="../index.html" class="flex items-center gap-1 group">
+                <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 md:h-12 w-auto transition-all group-hover:scale-105 filter brightness-110" referrerPolicy="no-referrer">
+                <div class="flex flex-col ml-3">
+                    <span class="text-white font-serif text-2xl tracking-tight leading-none italic">KNJ TUR</span>
+                    <span class="hidden sm:block text-[8px] text-primary/70 uppercase tracking-[0.3em] font-bold mt-1">sua agência completa de viagens</span>
+                </div>
+            </a>
+            
+            <div class="flex-1 flex justify-center">
+                <nav class="hidden lg:flex items-center gap-10 text-[10px] font-bold uppercase tracking-[0.25em] text-primary-light/60">
+                    <a href="../index.html" class="hover:text-primary transition-colors">Home</a>
+                    <a href="../sobre-nos/" class="hover:text-primary transition-colors">Sobre</a>
+                    <a href="../visto-americano/" class="hover:text-primary transition-colors">Visto Americano</a>
+                    <a href="./" class="text-primary border-b-2 border-primary pb-1 transition-colors">Viagens</a>
+                    <a href="../blog/" class="hover:text-primary transition-colors">Artigos</a>
+                </nav>
+            </div>
+
+            <div class="flex items-center gap-6">
+                <div class="hidden md:flex items-center">
+                    <a href="https://wa.me/5511994085822?text=Olá%20KNJ%20TUR!%20Gostaria%20de%20um%20atendimento%20personalizado%20sobre%20viagens." target="_blank" class="btn-luxury btn-whatsapp !px-8 !py-3">
+                        WhatsApp
+                    </a>
+                </div>
+
+                <button id="menu-btn" class="lg:hidden text-primary p-2">
+                    <i data-lucide="menu" size="28"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Container -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-ink flex flex-col items-center justify-center gap-10 text-3xl font-serif italic tracking-tight opacity-0 invisible transition-all duration-500">
+        <a href="../index.html" class="text-white">Home</a>
+        <a href="../sobre-nos/" class="text-white">Sobre</a>
+        <a href="../visto-americano/" class="text-white">Visto Americano</a>
+        <a href="./" class="text-primary">Viagens</a>
+        <a href="../blog/" class="text-white">Blog</a>
+        <a href="https://wa.me/5511994085822?text=Olá%20KNJ%20TUR!%20Gostaria%20de%20um%20atendimento%20personalizado%20sobre%20viagens." target="_blank" class="btn-luxury btn-whatsapp mt-4">Falar conosco</a>
+    </div>
+
+    <main class="pt-40 md:pt-48 pb-20">
+        <section class="py-24">
+            <div class="container mx-auto px-6 md:px-12">
+                <div class="max-w-4xl mx-auto text-center mb-24 reveal reveal-up">
+                    <div class="inline-flex items-center gap-3 mb-8">
+                        <div class="h-[1px] w-12 bg-primary"></div>
+                        <span class="text-primary text-[10px] uppercase tracking-[0.4em] font-bold">Curadoria & Destinos</span>
+                    </div>
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.1] text-white mb-8 tracking-tighter">
+                        Viagens que desenhamos : <br><span class="text-primary block">exclusivamente para você</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-primary-light/80 leading-relaxed max-w-2xl mx-auto font-light">
+                        Seja uma jornada de negócios ou as férias da sua vida, nossa agência foca no que realmente importa: a sua experiência memorável.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mb-32">
+                    <!-- Servico 1: Passagens -->
+                    <div class="reveal reveal-up p-10 bg-white/5 rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
+                            <i data-lucide="plane" class="text-primary" size="28"></i>
+                        </div>
+                        <h3 class="text-2xl font-display font-bold text-white mb-4">Passagens Aéreas</h3>
+                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Busca estratégica das melhores rotas e tarifas exclusivas com suporte em todas as etapas da sua jornada.</p>
+                        <a href="https://wa.me/5511994085822?text=Olá!%20Gostaria%20de%20uma%20cotação%20de%20passagens%20aéreas." target="_blank" class="text-primary font-bold uppercase tracking-widest text-[10px] flex items-center gap-2 hover:gap-4 transition-all">Solicitar cotação <i data-lucide="chevron-right" size="14"></i></a>
+                    </div>
+
+                    <!-- Servico 2: Hospedagem -->
+                    <div class="reveal reveal-up reveal-delay-1 p-10 bg-white/5 rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
+                            <i data-lucide="hotel" class="text-primary" size="28"></i>
+                        </div>
+                        <h3 class="text-2xl font-display font-bold text-white mb-4">Hospedagem</h3>
+                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Curadoria de hotéis selecionados e estadias exclusivas que combinam com seu perfil de viajante.</p>
+                        <a href="https://wa.me/5511994085822?text=Olá!%20Gostaria%20de%20consultar%20opções%20de%20hospedagem." target="_blank" class="text-primary font-bold uppercase tracking-widest text-[10px] flex items-center gap-2 hover:gap-4 transition-all">Consultar estadias <i data-lucide="chevron-right" size="14"></i></a>
+                    </div>
+
+                    <!-- Servico 3: Cruzeiros -->
+                    <div class="reveal reveal-up reveal-delay-2 p-10 bg-white/5 rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
+                            <i data-lucide="ship" class="text-primary" size="28"></i>
+                        </div>
+                        <h3 class="text-2xl font-display font-bold text-white mb-4">Cruzeiros Marítimos</h3>
+                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Reservas para as melhores companhias globais: MSC, Royal Caribbean e expedições de luxo.</p>
+                        <a href="https://wa.me/5511994085822?text=Olá!%20Gostaria%20de%20infos%20sobre%20cruzeiros%20marítimos." target="_blank" class="text-primary font-bold uppercase tracking-widest text-[10px] flex items-center gap-2 hover:gap-4 transition-all">Ver navios <i data-lucide="chevron-right" size="14"></i></a>
+                    </div>
+
+                    <!-- Servico 4: Ingressos -->
+                    <div class="reveal reveal-up p-10 bg-white/5 rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
+                            <i data-lucide="ticket" class="text-primary" size="28"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif italic text-white mb-4">Ingressos & Atrações</h3>
+                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Disney, Universal e as principais atrações globais com tarifas diferenciadas e compra segura.</p>
+                        <a href="https://wa.me/5511994085822?text=Olá!%20Gostaria%20de%20garantir%20meus%20ingressos%20e%20atrações." target="_blank" class="text-primary font-bold uppercase tracking-widest text-[10px] flex items-center gap-2 hover:gap-4 transition-all">Garantir entradas <i data-lucide="chevron-right" size="14"></i></a>
+                    </div>
+
+                    <!-- Servico 5: Trens -->
+                    <div class="reveal reveal-up reveal-delay-1 p-10 bg-white/5 rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
+                            <i data-lucide="train" class="text-primary" size="28"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif italic text-white mb-4">Tickets de Trem</h3>
+                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Passes e tickets individuais para Europa e outras regiões com mobilidade estratégica.</p>
+                        <a href="https://wa.me/5511994085822?text=Olá!%20Gostaria%20de%20consultar%20trechos%20de%20trem." target="_blank" class="text-primary font-bold uppercase tracking-widest text-[10px] flex items-center gap-2 hover:gap-4 transition-all">Consultar trechos <i data-lucide="chevron-right" size="14"></i></a>
+                    </div>
+
+                    <!-- Servico 6: Aluguel de Carro -->
+                    <div class="reveal reveal-up reveal-delay-2 p-10 bg-white/5 rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
+                            <i data-lucide="car" class="text-primary" size="28"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif italic text-white mb-4">Aluguel de Carros</h3>
+                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Liberdade total em seu destino com as melhores locadoras e seguros completos inclusos.</p>
+                        <a href="https://wa.me/5511994085822?text=Olá!%20Gostaria%20de%20alugar%20um%20veículo%20para%20minha%20viagem." target="_blank" class="text-primary font-bold uppercase tracking-widest text-[10px] flex items-center gap-2 hover:gap-4 transition-all">Alugar veículo <i data-lucide="chevron-right" size="14"></i></a>
+                    </div>
+
+                    <!-- Servico 7: Traslados -->
+                    <div class="reveal reveal-up p-10 bg-white/5 rounded-[3rem] border border-white/5 hover:border-primary/40 transition-all group">
+                        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-8 border border-primary/20">
+                            <i data-lucide="navigation" class="text-primary" size="28"></i>
+                        </div>
+                        <h3 class="text-2xl font-serif italic text-white mb-4">Traslados & Transfers</h3>
+                        <p class="text-primary-light/60 text-sm leading-relaxed mb-8">Logística completa de chegada e saída para garantir o conforto da sua viagem internacional.</p>
+                        <a href="https://wa.me/5511994085822?text=Olá!%20Gostaria%20de%20solicitar%20um%20transfer." target="_blank" class="text-primary font-bold uppercase tracking-widest text-[10px] flex items-center gap-2 hover:gap-4 transition-all">Solicitar transfer <i data-lucide="chevron-right" size="14"></i></a>
+                    </div>
+                </div>
+
+                <!-- CTA Final -->
+                <div class="relative py-24 md:py-32 rounded-[4rem] overflow-hidden text-center">
+                    <div class="absolute inset-0 z-0">
+                        <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=2070&auto=format&fit=crop" alt="Viagem dos Sonhos" class="w-full h-full object-cover opacity-20" referrerPolicy="no-referrer">
+                        <div class="absolute inset-0 bg-ink/80"></div>
+                    </div>
+                    <div class="relative z-10 max-w-2xl mx-auto px-6">
+                        <h2 class="text-4xl md:text-6xl font-serif italic text-white mb-8 tracking-tighter italic font-bold">Transforme seu roteiro em arte.</h2>
+                        <p class="text-primary-light/60 text-lg mb-12 font-light">Deixe os detalhes com quem entende de excelência. Seu próximo destino começa aqui.</p>
+                        <a href="https://wa.me/5511994085822?text=Olá!%20Gostaria%20de%20falar%20com%20um%20especialista%20sobre%20meu%20próximo%20roteiro." target="_blank" class="btn-luxury btn-whatsapp !px-12">Quero meu Roteiro Exclusivo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="section-white pt-24 pb-12">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24 border-b border-ink/5 pb-24">
+                <div class="flex flex-col items-start">
+                    <a href="../index.html" class="flex items-center gap-3 mb-8">
+                        <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-12 w-auto grayscale brightness-0" referrerPolicy="no-referrer">
+                        <div class="flex flex-col ml-3 text-left">
+                            <span class="text-ink font-serif text-2xl leading-none italic">KNJ TUR</span>
+                            <span class="text-[8px] text-ink/40 uppercase tracking-[0.3em] font-bold mt-1 leading-tight">sua agência completa de viagens</span>
+                        </div>
+                    </a>
+                    <p class="text-ink/60 text-xs leading-loose max-w-[240px] font-medium tracking-wide text-left">Planejamento estratégico de viagens e visto americano. Atendimento personalizado para Indaiatuba e região.</p>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <h5 class="text-ink uppercase tracking-widest text-[10px] font-bold">Navegação</h5>
+                    <nav class="flex flex-col gap-4 text-xs font-semibold text-ink/60">
+                        <a href="../index.html" class="hover:text-primary">Home</a>
+                        <a href="../sobre-nos/" class="hover:text-primary">Sobre Nós</a>
+                        <a href="../visto-americano/" class="hover:text-primary">Visto Americano</a>
+                        <a href="./" class="hover:text-primary">Viagens & Cruzeiros</a>
+                        <a href="../blog/" class="hover:text-primary">Blog & Dicas</a>
+                    </nav>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <h5 class="text-ink uppercase tracking-widest text-[10px] font-bold">Contato</h5>
+                    <div class="flex flex-col gap-4 text-xs font-semibold text-ink/60">
+                        <span class="flex items-center gap-3"><i data-lucide="map-pin" size="14"></i> Indaiatuba, SP</span>
+                        <span class="flex items-center gap-3"><i data-lucide="mail" size="14"></i> contato@knjtur.com.br</span>
+                        <span class="flex items-center gap-3"><i data-lucide="phone" size="14"></i> (11) 99408-5822</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-6">
+                    <h5 class="text-ink uppercase tracking-widest text-[10px] font-bold">Social</h5>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full border border-ink/10 flex items-center justify-center hover:bg-ink hover:text-white transition-all">
+                            <i data-lucide="instagram" size="16"></i>
+                        </a>
+                        <a href="https://wa.me/5511994085822?text=Olá%20Kenji!%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20dúvida." target="_blank" class="w-10 h-10 rounded-full border border-ink/10 flex items-center justify-center hover:bg-whatsapp hover:text-white transition-all">
+                            <i data-lucide="message-circle" size="16"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <p class="text-[10px] text-ink/30 uppercase tracking-[0.2em] font-bold">@2026 KNJ TUR | TODOS OS DIREITOS RESERVADOS</p>
+                <div class="text-[8px] uppercase tracking-widest text-ink/20">
+                    SITE DESENVOLVIDO POR <a href="https://www.orvalia.com.br" target="_blank" class="text-[#40E0D0] hover:brightness-110 font-bold transition-colors">ORVALIA STUDIO</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="../script.js"></script>
+</body>
+</html>

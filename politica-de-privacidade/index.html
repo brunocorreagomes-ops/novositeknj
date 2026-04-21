@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - KNJ TUR</title>
+    <!-- Base Styles -->
+    <link rel="stylesheet" href="../styles.css">
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FF8C00',
+                        'primary-light': '#E5D5C0',
+                        ink: '#0A0A0A',
+                        surface: '#F8F6F4',
+                        'surface-alt': '#F2F0ED',
+                        whatsapp: '#25D366',
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        serif: ['Montserrat', 'serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-ink text-primary-light antialiased selection:bg-primary/30 min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-ink/80 backdrop-blur-xl border-b border-white/5 h-20 md:h-24 flex items-center transition-all duration-300">
+        <div class="container mx-auto px-6 md:px-12 flex justify-between items-center">
+            <a href="../index.html" class="flex items-center gap-1 group">
+                <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-10 md:h-12 w-auto transition-all group-hover:scale-105 filter brightness-110" referrerPolicy="no-referrer">
+                <div class="flex flex-col ml-3 text-left">
+                    <span class="text-white font-serif text-2xl tracking-tight leading-none italic">KNJ TUR</span>
+                    <span class="hidden sm:block text-[8px] text-primary/70 uppercase tracking-[0.3em] font-bold mt-1 leading-tight">sua agência completa de viagens</span>
+                </div>
+            </a>
+            
+            <div class="flex-1 flex justify-center">
+                <nav class="hidden lg:flex items-center gap-10 text-[10px] font-bold uppercase tracking-[0.25em] text-primary-light/60">
+                    <a href="../index.html" class="hover:text-primary transition-colors">Home</a>
+                    <a href="../sobre-nos/" class="hover:text-primary transition-colors">Sobre</a>
+                    <a href="../visto-americano/" class="hover:text-primary transition-colors">Visto Americano</a>
+                    <a href="../viagens/" class="hover:text-primary transition-colors">Viagens</a>
+                    <a href="../blog/" class="hover:text-primary transition-colors">Artigos</a>
+                </nav>
+            </div>
+
+            <div class="flex items-center gap-6">
+                <div class="hidden md:flex items-center">
+                    <a href="https://wa.me/5511994085822?text=Olá%20KNJ%20TUR!%20Gostaria%20de%20um%20atendimento%20personalizado." target="_blank" class="btn-luxury btn-whatsapp !px-8 !py-3">
+                        WhatsApp
+                    </a>
+                </div>
+
+                <button id="menu-btn" class="lg:hidden text-primary p-2">
+                    <i data-lucide="menu" size="28"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Container -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-ink flex flex-col items-center justify-center gap-10 text-3xl font-serif italic tracking-tight opacity-0 invisible transition-all duration-500">
+        <a href="../index.html" class="text-white">Home</a>
+        <a href="../sobre-nos/" class="text-white">Sobre</a>
+        <a href="../visto-americano/" class="text-white">Visto Americano</a>
+        <a href="../viagens/" class="text-white">Viagens</a>
+        <a href="../blog/" class="text-white">Blog</a>
+        <a href="https://wa.me/5511994085822" target="_blank" class="btn-luxury btn-whatsapp mt-4">Falar conosco</a>
+    </div>
+
+    <main class="flex-1 pt-48 pb-20">
+        <div class="container mx-auto px-6 md:px-12 max-w-4xl">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-16 tracking-tighter leading-tight">Política de Privacidade</h1>
+            
+            <div class="prose prose-invert prose-orange max-w-none space-y-12 text-primary-light/70 text-lg leading-relaxed font-sans">
+                <p class="text-2xl font-serif italic text-primary-light">Sua privacidade é fundamental para a KNJ TUR. Esta política detalha como gerenciamos suas informações pessoais com transparência e segurança.</p>
+                
+                <div class="space-y-6">
+                    <h2 class="text-white font-serif text-3xl italic">Coleta de Informações</h2>
+                    <p>Coletamos apenas os dados estritamente necessários para a execução de nossos serviços de consultoria consular e organização de viagens internacionais.</p>
+                </div>
+                
+                <div class="space-y-6">
+                    <h2 class="text-white font-serif text-3xl italic">Uso de Dados</h2>
+                    <p>Seus dados são tratados com o mais alto nível de confidencialidade e utilizados exclusivamente para o processamento de suas solicitações junto a consulados e fornecedores de turismo.</p>
+                </div>
+                
+                <div class="space-y-6">
+                    <h2 class="text-white font-serif text-3xl italic">Compartilhamento</h2>
+                    <p>Não compartilhamos seus dados pessoais com terceiros, exceto quando essencial para a prestação do serviço contratado (emissões de passagens, seguros e reservas) ou por obrigação legal.</p>
+                </div>
+
+                <div class="pt-12 border-t border-white/5">
+                    <a href="../index.html" class="inline-flex items-center gap-3 text-primary font-bold uppercase tracking-[0.3em] text-[10px] hover:gap-5 transition-all">
+                        <i data-lucide="arrow-left" size="16"></i> Voltar ao Início
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="section-white pt-24 pb-12">
+        <div class="container mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-24 border-b border-ink/5 pb-24 text-left">
+                <div class="flex flex-col items-start">
+                    <a href="../index.html" class="flex items-center gap-3 mb-8">
+                        <img src="https://i.postimg.cc/d1RfCdxp/KNJ-LOGO-TRANSPARENTE.png" alt="KNJ TUR Logo" class="h-12 w-auto grayscale brightness-0" referrerPolicy="no-referrer">
+                        <div class="flex flex-col ml-3">
+                            <span class="text-ink font-serif text-2xl leading-none italic">KNJ TUR</span>
+                            <span class="text-[8px] text-ink/40 uppercase tracking-[0.3em] font-bold mt-1 leading-tight">sua agência completa de viagens</span>
+                        </div>
+                    </a>
+                    <p class="text-ink/60 text-xs leading-loose max-w-[240px] font-medium tracking-wide">Planejamento estratégico de viagens e visto americano. Atendimento personalizado para Indaiatuba e região.</p>
+                </div>
+
+                <div class="flex flex-col gap-6 text-left">
+                    <h5 class="text-ink uppercase tracking-widest text-[10px] font-bold">Navegação</h5>
+                    <nav class="flex flex-col gap-4 text-xs font-semibold text-ink/60">
+                        <a href="../index.html" class="hover:text-primary">Home</a>
+                        <a href="../sobre-nos/" class="hover:text-primary">Sobre Nós</a>
+                        <a href="../visto-americano/" class="hover:text-primary">Visto Americano</a>
+                        <a href="../viagens/" class="hover:text-primary">Viagens & Cruzeiros</a>
+                        <a href="../blog/" class="hover:text-primary">Blog & Dicas</a>
+                    </nav>
+                </div>
+
+                <div class="flex flex-col gap-6 text-left">
+                    <h5 class="text-ink uppercase tracking-widest text-[10px] font-bold">Contato</h5>
+                    <div class="flex flex-col gap-4 text-xs font-semibold text-ink/60">
+                        <span class="flex items-center gap-3"><i data-lucide="map-pin" size="14"></i> Indaiatuba, SP</span>
+                        <span class="flex items-center gap-3"><i data-lucide="mail" size="14"></i> contato@knjtur.com.br</span>
+                        <span class="flex items-center gap-3"><i data-lucide="phone" size="14"></i> (11) 99408-5822</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-6 text-left">
+                    <h5 class="text-ink uppercase tracking-widest text-[10px] font-bold">Social</h5>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full border border-ink/10 flex items-center justify-center hover:bg-ink hover:text-white transition-all">
+                            <i data-lucide="instagram" size="16"></i>
+                        </a>
+                        <a href="https://wa.me/5511994085822" target="_blank" class="w-10 h-10 rounded-full border border-ink/10 flex items-center justify-center hover:bg-whatsapp hover:text-white transition-all">
+                            <i data-lucide="message-circle" size="16"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
+                <p class="text-[10px] text-ink/30 uppercase tracking-[0.2em] font-bold">@2026 KNJ TUR | TODOS OS DIREITOS RESERVADOS</p>
+                <div class="text-[8px] uppercase tracking-widest text-ink/20">
+                    SITE DESENVOLVIDO POR <a href="https://www.orvalia.com.br" target="_blank" class="text-[#40E0D0] hover:brightness-110 font-bold transition-colors">ORVALIA STUDIO</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
