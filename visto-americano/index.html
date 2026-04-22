@@ -72,13 +72,16 @@
     </header>
 
     <!-- Mobile Menu Container -->
-    <div id="mobile-menu" class="fixed inset-0 z-40 bg-ink-darkest flex flex-col items-center justify-center gap-10 text-3xl font-serif italic tracking-tight opacity-0 invisible transition-all duration-500">
-        <a href="../index.html" class="text-white">Home</a>
-        <a href="../sobre-nos/" class="text-white">Sobre</a>
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-ink-darkest flex flex-col items-center justify-center gap-10 text-3xl font-serif italic tracking-tight opacity-0 invisible transition-all duration-500">
+        <button id="close-menu" class="absolute top-8 right-8 text-white/50 hover:text-primary transition-colors p-2">
+            <i data-lucide="x" size="40"></i>
+        </button>
+        <a href="../index.html" class="text-white hover:text-primary transition-colors">Home</a>
+        <a href="../sobre-nos/" class="text-white hover:text-primary transition-colors">Sobre</a>
         <a href="./" class="text-primary">Visto Americano</a>
-        <a href="../viagens/" class="text-white">Viagens</a>
-        <a href="../blog/" class="text-white">Blog</a>
-        <a href="https://wa.me/5511994085822?text=Olá%20KNJ%20TUR!%20Gostaria%20de%20um%20atendimento%20personalizado%20sobre%20viagens%20e%20vistos." target="_blank" class="btn-luxury btn-whatsapp mt-4">Falar conosco</a>
+        <a href="../viagens/" class="text-white hover:text-primary transition-colors">Viagens</a>
+        <a href="../blog/" class="text-white hover:text-primary transition-colors">Blog</a>
+        <a href="https://wa.me/5511994085822?text=Olá%20KNJ%20TUR!%20Gostaria%20de%20um%20atendimento%20personalizado." target="_blank" class="btn-luxury btn-whatsapp mt-4">Falar conosco</a>
     </div>
 
     <main class="pt-40 md:pt-48 pb-20">
@@ -92,7 +95,7 @@
                     <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-[1.1] text-white mb-8 tracking-tighter">
                         Primeiro Visto e Renovação : <br><span class="text-primary block">Assessoria de Alto Padrão</span>
                     </h1>
-                    <p class="text-lg md:text-xl text-primary-light/80 leading-relaxed max-w-2xl mx-auto font-light">
+                    <p class="text-lg md:text-xl text-primary-light/80 leading-relaxed max-w-2xl mx-auto font-light text-justify md:text-left">
                         Análise de perfil, preenchimento DS-160 e agendamentos. Somos a agência de vistos referência próximo a Campinas.
                     </p>
                 </div>
@@ -212,6 +215,67 @@
                     </div>
                 </div>
 
+                <!-- FAQ SECTION -->
+                <div class="py-24 max-w-4xl mx-auto reveal reveal-up">
+                    <div class="text-center mb-16">
+                        <div class="inline-flex items-center gap-3 mb-6">
+                            <div class="h-[1px] w-12 bg-primary"></div>
+                            <span class="text-primary text-[10px] uppercase tracking-[0.4em] font-bold">Transparência</span>
+                        </div>
+                        <h2 class="text-4xl md:text-5xl font-display font-bold text-white mb-6 uppercase tracking-tighter">Perguntas Frequentes</h2>
+                    </div>
+
+                    <div class="space-y-6 text-left">
+                        <details class="group bg-white/5 rounded-[2.5rem] border border-white/5 overflow-hidden transition-all hover:border-primary/20">
+                            <summary class="p-8 md:p-10 cursor-pointer flex justify-between items-center text-white font-bold list-none">
+                                <span class="text-lg md:text-xl">Quanto tempo demora para tirar o visto em 2026?</span>
+                                <i data-lucide="plus" class="text-primary group-open:rotate-45 transition-transform"></i>
+                            </summary>
+                            <div class="px-8 md:px-10 pb-10 text-primary-light/60 text-sm md:text-base leading-relaxed">
+                                O prazo total depende da agenda consular. Atualmente, a espera para a entrevista em São Paulo e Rio de Janeiro está em média de 3 a 5 meses. Após a aprovação, seu passaporte com o visto é entregue em até 10 dias úteis. Nossa equipe monitora cancelamentos diariamente para tentar antecipar sua data de agendamento.
+                            </div>
+                        </details>
+
+                        <details class="group bg-white/5 rounded-[2.5rem] border border-white/5 overflow-hidden transition-all hover:border-primary/20">
+                            <summary class="p-8 md:p-10 cursor-pointer flex justify-between items-center text-white font-bold list-none">
+                                <span class="text-lg md:text-xl">Quais os documentos necessários para o primeiro visto?</span>
+                                <i data-lucide="plus" class="text-primary group-open:rotate-45 transition-transform"></i>
+                            </summary>
+                            <div class="px-8 md:px-10 pb-10 text-primary-light/60 text-sm md:text-base leading-relaxed">
+                                <p class="mb-4">Para a entrevista, você deve ter em mãos:</p>
+                                <ul class="space-y-3 list-none">
+                                    <li class="flex items-start gap-3">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></div>
+                                        <span>Passaporte válido por no mínimo 6 meses;</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></div>
+                                        <span>Cópia da página de confirmação do formulário DS-160;</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></div>
+                                        <span>Comprovante de pagamento da taxa consular (MRV);</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <div class="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0"></div>
+                                        <span>Documentos que comprovem vínculos fortes (Imposto de Renda, Holerites, Escrituras ou Contratos Sociais).</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </details>
+
+                        <details class="group bg-white/5 rounded-[2.5rem] border border-white/5 overflow-hidden transition-all hover:border-primary/20">
+                            <summary class="p-8 md:p-10 cursor-pointer flex justify-between items-center text-white font-bold list-none">
+                                <span class="text-lg md:text-xl">A KNJ TUR garante a aprovação do meu visto?</span>
+                                <i data-lucide="plus" class="text-primary group-open:rotate-45 transition-transform"></i>
+                            </summary>
+                            <div class="px-8 md:px-10 pb-10 text-primary-light/60 text-sm md:text-base leading-relaxed">
+                                Nenhuma agência pode garantir a aprovação, pois a decisão final é soberana do cônsul americano. No entanto, nossa assessoria foca em eliminar erros técnicos no formulário e preparar seu discurso para que suas chances sejam maximizadas dentro do seu perfil real.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
                 <!-- CTA -->
                 <div class="relative py-24 md:py-32 rounded-[4rem] overflow-hidden text-center">
                     <div class="absolute inset-0 z-0">
@@ -267,7 +331,7 @@
                     <h5 class="text-white uppercase tracking-widest text-[10px] font-bold">Social</h5>
                     <div class="flex gap-4">
                         <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-white">
-                            <i data-lucide="instagram" size="16"></i>
+                            <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-5 h-5 object-contain" referrerPolicy="no-referrer">
                         </a>
                         <a href="https://wa.me/5511994085822?text=Olá%20Kenji!%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20dúvida%20sobre%20vistos." target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-whatsapp hover:text-white transition-all text-white">
                             <i data-lucide="message-circle" size="16"></i>

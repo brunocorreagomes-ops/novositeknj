@@ -68,13 +68,16 @@
     </header>
 
     <!-- Mobile Menu Container -->
-    <div id="mobile-menu" class="fixed inset-0 z-40 bg-ink-darkest flex flex-col items-center justify-center gap-10 text-3xl font-serif italic tracking-tight opacity-0 invisible transition-all duration-500">
-        <a href="../../index.html" class="text-white">Home</a>
-        <a href="../../sobre-nos/" class="text-white">Sobre</a>
-        <a href="../../visto-americano/" class="text-white">Visto Americano</a>
-        <a href="../../viagens/" class="text-white">Viagens</a>
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-ink-darkest flex flex-col items-center justify-center gap-10 text-3xl font-serif italic tracking-tight opacity-0 invisible transition-all duration-500">
+        <button id="close-menu" class="absolute top-8 right-8 text-white/50 hover:text-primary transition-colors p-2">
+            <i data-lucide="x" size="40"></i>
+        </button>
+        <a href="../../index.html" class="text-white hover:text-primary transition-colors">Home</a>
+        <a href="../../sobre-nos/" class="text-white hover:text-primary transition-colors">Sobre</a>
+        <a href="../../visto-americano/" class="text-white hover:text-primary transition-colors">Visto Americano</a>
+        <a href="../../viagens/" class="text-white hover:text-primary transition-colors">Viagens</a>
         <a href="../" class="text-primary">Blog</a>
-        <a href="https://wa.me/5511994085822" target="_blank" class="btn-luxury btn-whatsapp mt-4">Falar conosco</a>
+        <a href="https://wa.me/5511994085822?text=Olá%20KNJ%20TUR!%20Gostaria%20de%20um%20atendimento%20personalizado." target="_blank" class="btn-luxury btn-whatsapp mt-4">Falar conosco</a>
     </div>
 
     <main class="pt-40 md:pt-48 pb-20">
@@ -104,7 +107,7 @@
                 </div>
             </header>
 
-            <div class="space-y-16">
+            <div class="space-y-16 text-justify md:text-left">
                 <!-- Section 1: Intro -->
                 <div class="bg-surface-variant/30 rounded-[3rem] p-8 md:p-12 border border-white/5">
                     <div class="flex items-center gap-4 mb-8">
@@ -529,7 +532,7 @@
                     <h5 class="text-white uppercase tracking-widest text-[10px] font-bold">Social</h5>
                     <div class="flex gap-4">
                         <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-white">
-                            <i data-lucide="instagram" size="16"></i>
+                            <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-5 h-5 object-contain" referrerPolicy="no-referrer">
                         </a>
                         <a href="https://wa.me/5511994085822" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-whatsapp hover:text-white transition-all text-white">
                             <i data-lucide="message-circle" size="16"></i>

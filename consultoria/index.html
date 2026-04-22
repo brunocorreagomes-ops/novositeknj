@@ -72,20 +72,23 @@
     </header>
 
     <!-- Mobile Menu Container -->
-    <div id="mobile-menu" class="fixed inset-0 z-40 bg-ink-darkest flex flex-col items-center justify-center gap-10 text-3xl font-serif italic tracking-tight opacity-0 invisible transition-all duration-500">
-        <a href="/" class="text-white">Home</a>
-        <a href="/sobre-nos/" class="text-white">Sobre</a>
-        <a href="/visto-americano/" class="text-white">Visto Americano</a>
-        <a href="/viagens/" class="text-white">Viagens</a>
-        <a href="/blog/" class="text-white">Blog</a>
-        <a href="https://wa.me/5511994085822" target="_blank" class="btn-luxury btn-whatsapp mt-4">Falar conosco</a>
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-ink-darkest flex flex-col items-center justify-center gap-10 text-3xl font-serif italic tracking-tight opacity-0 invisible transition-all duration-500">
+        <button id="close-menu" class="absolute top-8 right-8 text-white/50 hover:text-primary transition-colors p-2">
+            <i data-lucide="x" size="40"></i>
+        </button>
+        <a href="../index.html" class="text-white hover:text-primary transition-colors">Home</a>
+        <a href="../sobre-nos/" class="text-white hover:text-primary transition-colors">Sobre</a>
+        <a href="../visto-americano/" class="text-white hover:text-primary transition-colors">Visto Americano</a>
+        <a href="../viagens/" class="text-white hover:text-primary transition-colors">Viagens</a>
+        <a href="../blog/" class="text-white hover:text-primary transition-colors">Blog</a>
+        <a href="https://wa.me/5511994085822?text=Olá%20KNJ%20TUR!%20Gostaria%20de%20um%20atendimento%20personalizado." target="_blank" class="btn-luxury btn-whatsapp mt-4">Falar conosco</a>
     </div>
 
     <main class="pt-40 md:pt-48 pb-20">
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto text-center mb-16 md:mb-24">
                 <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white mb-6 md:mb-8 tracking-tight text-center">Consultoria : <br><span class="text-primary">360 Graus</span></h1>
-                <p class="text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-3xl mx-auto">
+                <p class="text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-3xl mx-auto text-justify md:text-left">
                     Sua viagem começa muito antes do check-in. Desenhamos cada etapa para que sua única preocupação seja aproveitar o destino com máxima segurança jurídica.
                 </p>
             </div>
@@ -167,7 +170,7 @@
                     <h5 class="text-white uppercase tracking-widest text-[10px] font-bold">Social</h5>
                     <div class="flex gap-4">
                         <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-white">
-                            <i data-lucide="instagram" size="16"></i>
+                            <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-5 h-5 object-contain" referrerPolicy="no-referrer">
                         </a>
                         <a href="https://wa.me/5511994085822" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-whatsapp hover:text-white transition-all text-white">
                             <i data-lucide="message-circle" size="16"></i>

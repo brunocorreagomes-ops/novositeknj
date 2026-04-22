@@ -114,13 +114,16 @@
     </header>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 z-40 bg-ink-darkest flex flex-col items-center justify-center gap-10 text-3xl font-serif italic tracking-tight opacity-0 invisible transition-all duration-500">
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-ink-darkest flex flex-col items-center justify-center gap-10 text-3xl font-serif italic tracking-tight opacity-0 invisible transition-all duration-500">
+        <button id="close-menu" class="absolute top-8 right-8 text-white/50 hover:text-primary transition-colors p-2">
+            <i data-lucide="x" size="40"></i>
+        </button>
         <a href="index.html" class="text-primary">Home</a>
-        <a href="sobre-nos/" class="hover:text-primary transition-colors text-white">Sobre</a>
-        <a href="visto-americano/" class="hover:text-primary transition-colors text-white">Visto Americano</a>
-        <a href="viagens/" class="hover:text-primary transition-colors text-white">Viagens</a>
-        <a href="blog/" class="hover:text-primary transition-colors text-white">Blog</a>
-        <a href="https://wa.me/5511994085822?text=Olá%20KNJ%20TUR!%20Gostaria%20de%20um%20atendimento%20personalizado%20sobre%20viagens." target="_blank" class="btn-luxury btn-whatsapp mt-4">Falar conosco</a>
+        <a href="sobre-nos/" class="text-white hover:text-primary transition-colors">Sobre</a>
+        <a href="visto-americano/" class="text-white hover:text-primary transition-colors">Visto Americano</a>
+        <a href="viagens/" class="text-white hover:text-primary transition-colors">Viagens</a>
+        <a href="blog/" class="text-white hover:text-primary transition-colors">Blog</a>
+        <a href="https://wa.me/5511994085822?text=Olá%20KNJ%20TUR!%20Gostaria%20de%20um%20atendimento%20personalizado." target="_blank" class="btn-luxury btn-whatsapp mt-4">Falar conosco</a>
     </div>
 
     <main>
@@ -201,7 +204,7 @@
                     <h2 class="reveal reveal-up text-4xl md:text-6xl font-display font-bold leading-tight text-ink mb-8 tracking-tighter">
                         Tudo o que você precisa para <span class="block text-primary">viajar, em um só lugar</span>
                     </h2>
-                    <p class="reveal reveal-up reveal-delay-1 text-lg text-ink/60 font-light max-w-2xl">
+                    <p class="reveal reveal-up reveal-delay-1 text-lg text-ink/60 font-light max-w-2xl text-justify md:text-left">
                         Da aprovação do visto ao planejamento completo da sua viagem, cuidamos de cada detalhe para você.
                     </p>
                 </div>
@@ -214,7 +217,7 @@
                                 <i data-lucide="shield-check" class="text-primary" size="32"></i>
                             </div>
                             <h3 class="text-3xl font-display font-bold text-ink mb-6">Primeiro Visto e Renovação</h3>
-                            <p class="text-ink/60 text-sm leading-relaxed mb-8">Análise de perfil, preenchimento DS-160 e agendamentos. Somos a agência de vistos referência próximo a Campinas.</p>
+                            <p class="text-ink/60 text-sm leading-relaxed mb-8 text-justify md:text-left">Análise de perfil, preenchimento DS-160 e agendamentos. Somos a agência de vistos referência próximo a Campinas.</p>
                         </div>
                         <a href="visto-americano/" class="text-primary font-bold uppercase tracking-widest text-[10px] flex items-center gap-3 hover:gap-5 transition-all">
                             Saber mais <i data-lucide="arrow-right" size="14"></i>
@@ -305,17 +308,16 @@
                         </a>
                     </div>
 
-                    <!-- Card 8: Traslados e Transfers -->
-                    <div class="reveal reveal-up reveal-delay-1 p-12 bg-surface-alt rounded-[3rem] border border-ink/5 hover:border-primary/30 transition-all group flex flex-col justify-between min-h-[450px]">
+                    <div class="reveal reveal-up reveal-delay-2 p-12 bg-surface-alt rounded-[3rem] border border-ink/5 hover:border-primary/30 transition-all group flex flex-col justify-between min-h-[450px]">
                         <div>
                             <div class="w-16 h-16 bg-primary/10 rounded-3xl flex items-center justify-center mb-10 group-hover:bg-primary/20 transition-colors">
                                 <i data-lucide="car" class="text-primary" size="32"></i>
                             </div>
-                            <h3 class="text-3xl font-display font-bold text-ink mb-6">Traslados e Transfers</h3>
-                            <p class="text-ink/60 text-sm leading-relaxed mb-8">Logística completa de chegada e saída para garantir o conforto da sua viagem internacional.</p>
+                            <h3 class="text-3xl font-display font-bold text-ink mb-6">Traslados</h3>
+                            <p class="text-ink/60 text-sm leading-relaxed mb-8 text-justify md:text-left">Logística completa de chegada e saída para garantir o conforto da sua viagem internacional.</p>
                         </div>
-                        <a href="https://wa.me/5511994085822?text=Olá!%20Gostaria%20de%20solicitar%20um%20traslado%20ou%20transfer." target="_blank" class="text-primary font-bold uppercase tracking-widest text-[10px] flex items-center gap-3 hover:gap-5 transition-all">
-                            Agendar transfer <i data-lucide="arrow-right" size="14"></i>
+                        <a href="https://wa.me/5511994085822?text=Olá!%20Gostaria%20de%20solicitar%20um%20traslado." target="_blank" class="text-primary font-bold uppercase tracking-widest text-[10px] flex items-center gap-3 hover:gap-5 transition-all">
+                            Agendar traslados <i data-lucide="arrow-right" size="14"></i>
                         </a>
                     </div>
 
@@ -327,7 +329,7 @@
                                 <i data-lucide="globe" class="text-ink" size="32"></i>
                             </div>
                             <h3 class="text-4xl font-display font-bold text-white mb-6">Gestão de Viagem Completa</h3>
-                            <p class="text-primary-light/60 text-md leading-relaxed mb-10 max-w-md">Deixamos tudo pronto para você. Da emissão do visto à reserva do transfer no destino, sua única preocupação será fazer as malas.</p>
+                            <p class="text-primary-light/60 text-md leading-relaxed mb-10 max-w-md text-justify md:text-left">Deixamos tudo pronto para você. Da emissão do visto à reserva do traslado no destino, sua única preocupação será fazer as malas.</p>
                             <a href="https://wa.me/5511994085822?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Gestão%20de%20Viagem%20Completa." target="_blank" class="btn-luxury btn-whatsapp">
                                 Consultar Disponibilidade
                             </a>
@@ -499,7 +501,7 @@
                     <h5 class="text-white uppercase tracking-widest text-[10px] font-bold">Social</h5>
                     <div class="flex gap-4">
                         <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-white">
-                            <i data-lucide="instagram" size="16"></i>
+                            <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-5 h-5 object-contain" referrerPolicy="no-referrer">
                         </a>
                         <a href="https://wa.me/5511994085822?text=Olá%20Kenji!%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20dúvida." target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-whatsapp hover:text-white transition-all text-white">
                             <i data-lucide="message-circle" size="16"></i>

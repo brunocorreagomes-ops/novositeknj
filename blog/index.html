@@ -72,13 +72,16 @@
     </header>
 
     <!-- Mobile Menu Container -->
-    <div id="mobile-menu" class="fixed inset-0 z-40 bg-ink-darkest flex flex-col items-center justify-center gap-10 text-3xl font-serif italic tracking-tight opacity-0 invisible transition-all duration-500">
-        <a href="../index.html" class="text-white">Home</a>
-        <a href="../sobre-nos/" class="text-white">Sobre</a>
-        <a href="../visto-americano/" class="text-white">Visto Americano</a>
-        <a href="../viagens/" class="text-white">Viagens</a>
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-ink-darkest flex flex-col items-center justify-center gap-10 text-3xl font-serif italic tracking-tight opacity-0 invisible transition-all duration-500">
+        <button id="close-menu" class="absolute top-8 right-8 text-white/50 hover:text-primary transition-colors p-2">
+            <i data-lucide="x" size="40"></i>
+        </button>
+        <a href="../index.html" class="text-white hover:text-primary transition-colors">Home</a>
+        <a href="../sobre-nos/" class="text-white hover:text-primary transition-colors">Sobre</a>
+        <a href="../visto-americano/" class="text-white hover:text-primary transition-colors">Visto Americano</a>
+        <a href="../viagens/" class="text-white hover:text-primary transition-colors">Viagens</a>
         <a href="./" class="text-primary">Blog</a>
-        <a href="https://wa.me/5511994085822?text=Olá%20KNJ%20TUR!%20Gostaria%20de%20um%20atendimento%20personalizado%20sobre%20viagens." target="_blank" class="btn-luxury btn-whatsapp mt-4">Falar conosco</a>
+        <a href="https://wa.me/5511994085822?text=Olá%20KNJ%20TUR!%20Gostaria%20de%20um%20atendimento%20personalizado." target="_blank" class="btn-luxury btn-whatsapp mt-4">Falar conosco</a>
     </div>
 
     <main class="pt-40 md:pt-48 pb-20">
@@ -105,7 +108,7 @@
                                 <h3 class="text-white text-2xl font-serif italic leading-tight italic font-bold">Visto Americano em Indaiatuba e Campinas</h3>
                             </div>
                         </a>
-                        <p class="text-primary-light/40 text-xs leading-relaxed mb-6 font-light">Entenda como a logística estratégica do interior paulista pode ser sua maior aliada no processo consular em 2026.</p>
+                        <p class="text-primary-light/40 text-xs leading-relaxed mb-6 font-light text-justify md:text-left">Entenda como a logística estratégica do interior paulista pode ser sua maior aliada no processo consular em 2026.</p>
                         <a href="visto-americano-indaiatuba-campinas/" class="text-primary text-[10px] font-bold uppercase tracking-widest flex items-center gap-2 hover:gap-4 transition-all">Ler artigo completo <i data-lucide="arrow-right" size="14"></i></a>
                     </article>
 
@@ -119,7 +122,7 @@
                                 <h3 class="text-white text-2xl font-serif italic leading-tight italic font-bold">EES Europa: Guia Completo para Turistas</h3>
                             </div>
                         </a>
-                        <p class="text-primary-light/40 text-xs leading-relaxed mb-6 font-light">As novas regras de controle biométrico e registro de entrada que mudam a forma como entramos no continente europeu.</p>
+                        <p class="text-primary-light/40 text-xs leading-relaxed mb-6 font-light text-justify md:text-left">As novas regras de controle biométrico e registro de entrada que mudam a forma como entramos no continente europeu.</p>
                         <a href="ees-passo-a-passo-completo-europa/" class="text-primary text-[10px] font-bold uppercase tracking-widest flex items-center gap-2 hover:gap-4 transition-all">Ler artigo completo <i data-lucide="arrow-right" size="14"></i></a>
                     </article>
 
@@ -133,7 +136,7 @@
                                 <h3 class="text-white text-2xl font-serif italic leading-tight italic font-bold">Visto Americano: Por onde começar em 2026?</h3>
                             </div>
                         </a>
-                        <p class="text-primary-light/40 text-xs leading-relaxed mb-6 font-light">O passo zero para quem deseja os EUA. Critérios de elegibilidade, categorias de visto e primeiros passos práticos.</p>
+                        <p class="text-primary-light/40 text-xs leading-relaxed mb-6 font-light text-justify md:text-left">O passo zero para quem deseja os EUA. Critérios de elegibilidade, categorias de visto e primeiros passos práticos.</p>
                         <a href="visto-americano-por-onde-comecar/" class="text-primary text-[10px] font-bold uppercase tracking-widest flex items-center gap-2 hover:gap-4 transition-all">Ler artigo completo <i data-lucide="arrow-right" size="14"></i></a>
                     </article>
 
@@ -147,7 +150,7 @@
                                 <h3 class="text-white text-2xl font-serif italic leading-tight italic font-bold">Entrevista no Consulado: O Guia Prático</h3>
                             </div>
                         </a>
-                        <p class="text-primary-light/40 text-xs leading-relaxed mb-6 font-light">Como se comportar, o que falar e como organizar seus documentos para o momento decisivo da aprovação.</p>
+                        <p class="text-primary-light/40 text-xs leading-relaxed mb-6 font-light text-justify md:text-left">Como se comportar, o que falar e como organizar seus documentos para o momento decisivo da aprovação.</p>
                         <a href="entrevista-consulado-americano-guia-pratico/" class="text-primary text-[10px] font-bold uppercase tracking-widest flex items-center gap-2 hover:gap-4 transition-all">Ler artigo completo <i data-lucide="arrow-right" size="14"></i></a>
                     </article>
 
@@ -161,7 +164,7 @@
                                 <h3 class="text-white text-2xl font-serif italic leading-tight italic font-bold">Renovação sem Entrevista em 2026</h3>
                             </div>
                         </a>
-                        <p class="text-primary-light/40 text-xs leading-relaxed mb-6 font-light">Descubra se você é elegível para renovar seu visto sem precisar enfrentar a entrevista presencial no consulado.</p>
+                        <p class="text-primary-light/40 text-xs leading-relaxed mb-6 font-light text-justify md:text-left">Descubra se você é elegível para renovar seu visto sem precisar enfrentar a entrevista presencial no consulado.</p>
                         <a href="renovacao-de-visto-americano-sem-entrevista/" class="text-primary text-[10px] font-bold uppercase tracking-widest flex items-center gap-2 hover:gap-4 transition-all">Ler artigo completo <i data-lucide="arrow-right" size="14"></i></a>
                     </article>
 
@@ -175,7 +178,7 @@
                                 <h3 class="text-white text-2xl font-serif italic leading-tight italic font-bold">Consultoria vs Assessoria: Qual escolher?</h3>
                             </div>
                         </a>
-                        <p class="text-primary-light/40 text-xs leading-relaxed mb-6 font-light">Por que apenas preencher formulários não é suficiente para perfis de alta performance e viagens de luxo.</p>
+                        <p class="text-primary-light/40 text-xs leading-relaxed mb-6 font-light text-justify md:text-left">Por que apenas preencher formulários não é suficiente para perfis de alta performance e viagens de luxo.</p>
                         <a href="consultoria-vs-assessoria-diferenca/" class="text-primary text-[10px] font-bold uppercase tracking-widest flex items-center gap-2 hover:gap-4 transition-all">Ler artigo completo <i data-lucide="arrow-right" size="14"></i></a>
                     </article>
                 </div>
@@ -222,7 +225,7 @@
                     <h5 class="text-white uppercase tracking-widest text-[10px] font-bold">Social</h5>
                     <div class="flex gap-4">
                         <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-white">
-                            <i data-lucide="instagram" size="16"></i>
+                            <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-5 h-5 object-contain" referrerPolicy="no-referrer">
                         </a>
                         <a href="https://wa.me/5511994085822?text=Olá%20Kenji!%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20dúvida." target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-whatsapp hover:text-white transition-all text-white">
                             <i data-lucide="message-circle" size="16"></i>

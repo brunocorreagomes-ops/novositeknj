@@ -72,13 +72,16 @@
     </header>
 
     <!-- Mobile Menu Container -->
-    <div id="mobile-menu" class="fixed inset-0 z-40 bg-ink-darkest flex flex-col items-center justify-center gap-10 text-3xl font-serif italic tracking-tight opacity-0 invisible transition-all duration-500">
-        <a href="../../index.html" class="text-white">Home</a>
-        <a href="../../sobre-nos/" class="text-white">Sobre</a>
-        <a href="../../visto-americano/" class="text-white">Visto Americano</a>
-        <a href="../../viagens/" class="text-white">Viagens</a>
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-ink-darkest flex flex-col items-center justify-center gap-10 text-3xl font-serif italic tracking-tight opacity-0 invisible transition-all duration-500">
+        <button id="close-menu" class="absolute top-8 right-8 text-white/50 hover:text-primary transition-colors p-2">
+            <i data-lucide="x" size="40"></i>
+        </button>
+        <a href="../../index.html" class="text-white hover:text-primary transition-colors">Home</a>
+        <a href="../../sobre-nos/" class="text-white hover:text-primary transition-colors">Sobre</a>
+        <a href="../../visto-americano/" class="text-white hover:text-primary transition-colors">Visto Americano</a>
+        <a href="../../viagens/" class="text-white hover:text-primary transition-colors">Viagens</a>
         <a href="../" class="text-primary">Blog</a>
-        <a href="https://wa.me/5511994085822" target="_blank" class="btn-luxury btn-whatsapp mt-4">Falar conosco</a>
+        <a href="https://wa.me/5511994085822?text=Olá%20KNJ%20TUR!%20Gostaria%20de%20um%20atendimento%20personalizado." target="_blank" class="btn-luxury btn-whatsapp mt-4">Falar conosco</a>
     </div>
 
     <main class="pt-40 md:pt-48 pb-20">
@@ -108,7 +111,7 @@
                 </div>
             </header>
 
-            <div class="prose max-w-none text-base md:text-lg text-on-surface-variant leading-relaxed space-y-12">
+            <div class="prose max-w-none text-base md:text-lg text-on-surface-variant leading-relaxed space-y-12 text-justify md:text-left">
                 <div class="italic font-serif text-2xl text-white mb-12">
                     <p>Tirar o visto americano é o primeiro passo para realizar o sonho de conhecer os parques de Orlando, as luzes de New York ou as praias da Califórnia. No entanto, o que deveria ser um processo administrativo muitas vezes se torna um pesadelo burocrático para quem não conhece as regras do jogo.</p>
                 </div>
@@ -194,25 +197,46 @@
             </div>
 
             <!-- FAQs -->
-            <section class="mt-20 pt-20 border-t border-white/5">
-                <h3 class="text-2xl md:text-3xl font-display font-black text-white mb-10 italic uppercase tracking-tighter">Dúvidas Frequentes</h3>
+            <section class="mt-20 pt-20 border-t border-white/5 text-left">
+                <h3 class="text-2xl md:text-3xl font-display font-black text-white mb-10 italic uppercase tracking-tighter">Perguntas Frequentes</h3>
                 <div class="space-y-6">
-                    <details class="group bg-surface-variant/40 rounded-2xl md:rounded-3xl border border-white/5 overflow-hidden">
+                    <details class="group bg-surface-variant/40 rounded-2xl md:rounded-3xl border border-white/5 overflow-hidden" open>
                         <summary class="p-8 cursor-pointer flex justify-between items-center text-white font-bold list-none">
-                            Quanto tempo demora o processo todo?
+                            Quanto tempo demora o processo todo em 2026?
                             <i data-lucide="chevron-down" class="text-primary group-open:rotate-180 transition-transform"></i>
                         </summary>
                         <div class="px-8 pb-8 text-on-surface-variant text-sm md:text-base leading-relaxed">
-                            Depende da disponibilidade de agendamentos no consulado escolhido. Atualmente, varia de 2 a 6 meses, mas nossa equipe busca antecipações constantes.
+                            <p class="mb-4">O tempo total é dividido em duas fases principais:</p>
+                            <ul class="space-y-2 list-disc pl-5">
+                                <li><span class="text-white font-medium">Agendamento:</span> Atualmente, a espera para entrevistas em consulados como São Paulo e Rio de Janeiro varia de 3 a 5 meses. No entanto, nossa assessoria monitora diariamente as vagas para buscar antecipações.</li>
+                                <li><span class="text-white font-medium">Processamento e Entrega:</span> Após a entrevista, se aprovado, o consulado leva cerca de 7 a 10 dias úteis para confeccionar o visto e realizar a entrega via correios ou liberação para retirada no CASV.</li>
+                            </ul>
                         </div>
                     </details>
+
                     <details class="group bg-surface-variant/40 rounded-2xl md:rounded-3xl border border-white/5 overflow-hidden">
                         <summary class="p-8 cursor-pointer flex justify-between items-center text-white font-bold list-none">
-                            Preciso falar inglês na entrevista?
+                            Quais documentos são obrigatórios para quem tira o visto pela primeira vez?
                             <i data-lucide="chevron-down" class="text-primary group-open:rotate-180 transition-transform"></i>
                         </summary>
                         <div class="px-8 pb-8 text-on-surface-variant text-sm md:text-base leading-relaxed">
-                            Não. Para vistos de turismo (B1/B2), a entrevista no Brasil é feita em português.
+                            <p class="mb-4">Para solicitantes de primeira viagem, os documentos fundamentais são:</p>
+                            <ul class="space-y-2 list-disc pl-5">
+                                <li><span class="text-white font-medium">Passaporte Válido</span> (com pelo menos 6 meses de validade) e passaportes anteriores, se houver;</li>
+                                <li><span class="text-white font-medium">Confirmação do Formulário DS-160</span> com o código de barras legível;</li>
+                                <li><span class="text-white font-medium">Comprovante de Pagamento da Taxa MRV</span> (atualmente 185 dólares);</li>
+                                <li><span class="text-white font-medium">Vínculos Socioeconômicos:</span> Holerites, declaração de imposto de renda, comprovantes de bens e extratos bancários recentes que demonstrem capacidade financeira e intenção de retorno ao Brasil.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="group bg-surface-variant/40 rounded-2xl md:rounded-3xl border border-white/5 overflow-hidden">
+                        <summary class="p-8 cursor-pointer flex justify-between items-center text-white font-bold list-none">
+                            Preciso falar inglês na entrevista do consulado?
+                            <i data-lucide="chevron-down" class="text-primary group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <div class="px-8 pb-8 text-on-surface-variant text-sm md:text-base leading-relaxed">
+                            Não. Residentes do Brasil que solicitam vistos de turismo (B1/B2) realizam a entrevista totalmente em português. Os oficiais consulares são treinados para o atendimento local, eliminando qualquer barreira de idioma.
                         </div>
                     </details>
                 </div>
@@ -313,7 +337,7 @@
                     <h5 class="text-white uppercase tracking-widest text-[10px] font-bold">Social</h5>
                     <div class="flex gap-4">
                         <a href="https://www.instagram.com/knjtur" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-all text-white">
-                            <i data-lucide="instagram" size="16"></i>
+                            <img src="https://i.ibb.co/gbY8Qtmb/instagramknj.webp" alt="Instagram" class="w-5 h-5 object-contain" referrerPolicy="no-referrer">
                         </a>
                         <a href="https://wa.me/5511994085822" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center hover:bg-whatsapp hover:text-white transition-all text-white">
                             <i data-lucide="message-circle" size="16"></i>

@@ -143,10 +143,33 @@ h1 {
   transition: all 1.2s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+#mobile-menu {
+  background: rgba(10, 10, 10, 0.98);
+  backdrop-filter: blur(20px);
+}
+
 #mobile-menu.active {
   opacity: 1;
   visibility: visible;
 }
+
+#mobile-menu a {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#mobile-menu.active a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#mobile-menu a:nth-child(1) { transition-delay: 0.1s; }
+#mobile-menu a:nth-child(2) { transition-delay: 0.2s; }
+#mobile-menu a:nth-child(3) { transition-delay: 0.3s; }
+#mobile-menu a:nth-child(4) { transition-delay: 0.4s; }
+#mobile-menu a:nth-child(5) { transition-delay: 0.5s; }
+#mobile-menu a:nth-child(6) { transition-delay: 0.6s; }
 
 .reveal-up { transform: translateY(60px); }
 .reveal-left { transform: translateX(-60px); }
@@ -168,22 +191,67 @@ h1 {
   opacity: 0.3;
 }
 
-/* WhatsApp Float - Premium Style */
-.whatsapp-float {
-  background-color: #25D366;
-  color: white;
-  width: 60px;
-  height: 60px;
+/* Floating Action Buttons (Fixed) */
+.fab-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  pointer-events: none;
+}
+
+.fab-btn {
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 15px 30px rgba(37, 211, 102, 0.3);
-  transition: all 0.3s;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  pointer-events: auto;
+  border: none;
+  outline: none;
 }
 
-.whatsapp-float:hover {
+.fab-btn:hover {
   transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.fab-whatsapp {
+  background-color: #25D366;
+  color: white;
+}
+
+.fab-back-to-top {
+  background-color: var(--primary);
+  color: var(--ink);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+}
+
+.fab-back-to-top.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .fab-container {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+  
+  .fab-btn {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 /* Selection */

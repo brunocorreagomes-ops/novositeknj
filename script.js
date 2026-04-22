@@ -26,36 +26,58 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile Menu Toggle
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenuBtn = document.getElementById('close-menu');
     
-    if (menuBtn && mobileMenu) {
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
-            mobileMenu.classList.remove('hidden'); // Ensure it's not hidden if we're using transition
-            
-            const icon = menuBtn.querySelector('i');
-            if (icon) {
-                if (mobileMenu.classList.contains('active')) {
+    const toggleMenu = (show) => {
+        if (show) {
+            mobileMenu.classList.add('active');
+            mobileMenu.classList.remove('invisible');
+            document.body.style.overflow = 'hidden';
+            if (menuBtn) {
+                const icon = menuBtn.querySelector('i');
+                if (icon) {
                     icon.setAttribute('data-lucide', 'x');
-                    document.body.style.overflow = 'hidden';
-                } else {
-                    icon.setAttribute('data-lucide', 'menu');
-                    document.body.style.overflow = '';
+                    window.lucide.createIcons();
                 }
-                window.lucide.createIcons();
             }
-        });
-
-        // Close menu when clicking a link
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('active');
-                document.body.style.overflow = '';
+        } else {
+            mobileMenu.classList.remove('active');
+            document.body.style.overflow = '';
+            setTimeout(() => {
+                if (!mobileMenu.classList.contains('active')) {
+                    mobileMenu.classList.add('invisible');
+                }
+            }, 500);
+            if (menuBtn) {
                 const icon = menuBtn.querySelector('i');
                 if (icon) {
                     icon.setAttribute('data-lucide', 'menu');
                     window.lucide.createIcons();
                 }
-            });
+            }
+        }
+    };
+
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+            const isActive = mobileMenu.classList.contains('active');
+            toggleMenu(!isActive);
+        });
+
+        if (closeMenuBtn) {
+            closeMenuBtn.addEventListener('click', () => toggleMenu(false));
+        }
+
+        // Close menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => toggleMenu(false));
+        });
+
+        // Close on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+                toggleMenu(false);
+            }
         });
     }
 
@@ -72,19 +94,44 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Back to top button visibility
-    const backToTop = document.getElementById('back-to-top');
-    if (backToTop) {
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 500) {
-                backToTop.classList.remove('opacity-0', 'invisible', 'translate-y-10');
-                backToTop.classList.add('opacity-100', 'visible', 'translate-y-0');
-            } else {
-                backToTop.classList.add('opacity-0', 'invisible', 'translate-y-10');
-                backToTop.classList.remove('opacity-100', 'visible', 'translate-y-0');
-            }
-        });
-    }
+    // Floating Action Buttons Injection & Logic
+    const injectFabs = () => {
+        const fabContainer = document.createElement('div');
+        fabContainer.className = 'fab-container';
+        fabContainer.innerHTML = `
+            <button id="back-to-top-btn" class="fab-btn fab-back-to-top" title="Voltar ao Topo">
+                <i data-lucide="arrow-up" size="24"></i>
+            </button>
+            <a href="https://wa.me/5511994085822?text=Olá%20KNJ%20TUR!%20Gostaria%20de%20um%20atendimento%20personalizado." 
+               target="_blank" 
+               class="fab-btn fab-whatsapp" 
+               title="Falar no WhatsApp">
+                <i data-lucide="message-circle" size="28"></i>
+            </a>
+        `;
+        document.body.appendChild(fabContainer);
+        if (window.lucide) window.lucide.createIcons();
+
+        const bttBtn = document.getElementById('back-to-top-btn');
+        if (bttBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 400) {
+                    bttBtn.classList.add('active');
+                } else {
+                    bttBtn.classList.remove('active');
+                }
+            });
+
+            bttBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+    };
+
+    injectFabs();
 
     // Scroll Reveal Animation Logic
     const revealElements = document.querySelectorAll('.reveal');
